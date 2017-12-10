@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Name>mysite</Name>
+    <RootNamespace>mysite</RootNamespace>
+    <InterpreterId>Global|ContinuumAnalytics|Anaconda36-64</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>8fcd038c-8cbe-4063-b8e0-bbba25634974</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{5F0BE9CA-D677-4A4D-8806-6076C0FAAD37};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>manage.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <LaunchProvider>Django launcher</LaunchProvider>
+    <DjangoSettingsModule>mysite.settings</DjangoSettingsModule>
+    <OutputPath>.</OutputPath>
+    <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="contacto\admin.py" />
+    <Compile Include="contacto\apps.py" />
+    <Compile Include="contacto\forms.py" />
+    <Compile Include="contacto\migrations\__init__.py" />
+    <Compile Include="contacto\models.py" />
+    <Compile Include="contacto\tests.py" />
+    <Compile Include="contacto\urls.py" />
+    <Compile Include="contacto\views.py" />
+    <Compile Include="contacto\__init__.py" />
+    <Compile Include="manage.py" />
+    <Compile Include="mysite\__init__.py" />
+    <Compile Include="mysite\settings.py" />
+    <Compile Include="mysite\urls.py" />
+    <Compile Include="mysite\wsgi.py" />
+    <Compile Include="polls\admin.py" />
+    <Compile Include="polls\apps.py" />
+    <Compile Include="polls\forms.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="polls\migrations\__init__.py" />
+    <Compile Include="polls\models.py" />
+    <Compile Include="polls\tests.py" />
+    <Compile Include="polls\urls.py" />
+    <Compile Include="polls\views.py" />
+    <Compile Include="polls\views_old.py" />
+    <Compile Include="polls\__init__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="contacto\" />
+    <Folder Include="contacto\migrations\" />
+    <Folder Include="contacto\static\" />
+    <Folder Include="contacto\templates\" />
+    <Folder Include="mysite\" />
+    <Folder Include="polls\" />
+    <Folder Include="polls\migrations\" />
+    <Folder Include="polls\static\" />
+    <Folder Include="polls\static\.ipynb_checkpoints\" />
+    <Folder Include="polls\static\polls\" />
+    <Folder Include="polls\static\polls\.ipynb_checkpoints\" />
+    <Folder Include="polls\static\polls\images\" />
+    <Folder Include="polls\templates\" />
+    <Folder Include="polls\templates\.ipynb_checkpoints\" />
+    <Folder Include="polls\templates\admin\" />
+    <Folder Include="polls\templates\polls\" />
+    <Folder Include="polls\templates\polls\.ipynb_checkpoints\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="contacto\static\w3.css" />
+    <Content Include="contacto\templates\base.html" />
+    <Content Include="contacto\templates\contact.html" />
+    <Content Include="contacto\templates\contact.txt" />
+    <Content Include="contacto\templates\index.html" />
+    <Content Include="contacto\templates\thanks.html" />
+    <Content Include="polls\static\polls\images\._background.jpg" />
+    <Content Include="polls\static\polls\images\background.jpg" />
+    <Content Include="polls\static\polls\style.css" />
+    <Content Include="polls\templates\.DS_Store" />
+    <Content Include="polls\templates\._.DS_Store" />
+    <Content Include="polls\templates\admin\.DS_Store" />
+    <Content Include="polls\templates\admin\._.DS_Store" />
+    <Content Include="polls\templates\admin\base_site.html" />
+    <Content Include="polls\templates\admin\index.html" />
+    <Content Include="polls\templates\polls\base.html" />
+    <Content Include="polls\templates\polls\question_create.html" />
+    <Content Include="polls\templates\polls\detail.html" />
+    <Content Include="polls\templates\polls\index.html" />
+    <Content Include="polls\templates\polls\question_confirm_delete.html" />
+    <Content Include="polls\templates\polls\question_form.html" />
+    <Content Include="polls\templates\polls\results.html" />
+    <Content Include="requirements.txt" />
+    <Content Include="db.sqlite3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="readme.html">
+      <SubType>WebBrowser</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|ContinuumAnalytics|Anaconda36-64" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

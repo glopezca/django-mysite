@@ -1,0 +1,14 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block title %} Mi proyecto Django {% endblock title %}</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="{% static 'w3.css' %}"/>
+        {% block header %}{% endblock header %}
+    </head>
+    <body>
+        {% block content %}{% endblock content %}
+        {% block footer %}{% endblock footer %}
+    </body>
+</html>

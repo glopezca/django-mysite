@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}Contacto - {{ block.super }}{% endblock %}
+
+{% block content %}
+<div class="w3-container w3-lime">
+<h1>Formulario de contacto</h1>
+    <form role="form" action="" method="post" class="w3-panel">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input class="btn btn-link" type="button" value="Volver" onclick="window.history.go(-1);"/>
+        <input type="submit" value="Enviar"/>
+    </form>
+</div>
+{% endblock %}
